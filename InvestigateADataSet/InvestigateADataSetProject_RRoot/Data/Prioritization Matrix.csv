@@ -1,0 +1,21 @@
+Attribute,Difficulty,Benefit,Status,Reasoning
+imdb_id,1,5,Keep,Provides granular lookup.
+popularity,2,5,Keep,Measure of interest. Has undefined scale and missing data issues. Population size unknown.
+budget,3,3,Remove,Measure of interest. Has a lot missing data. Most data is skewed to a small set of attribute values
+revenue,3,5,Keep,Measure of interest. Has a lot missing data. Most data is skewed to a small set of attribute values
+original_title,1,5,Keep,Attribute if interest. Human Friendly Identifier.
+cast,3,5,Keep,Attribute of interest. Is a collection of values
+homepage,2,2,Remove,Attribute of interest. A two-thirds of the data is null
+director,2,5,Keep,Attribute of interest.
+tagline,3,3,Remove,Attribute of interest. Missing data issues. 
+keywords,3,3,Remove,Attribute of interest. Must be parsed to group. Too many variations for easy grouping.
+overview,1,1,Remove,Attribute of interest. Must be parsed to group. Too many variations for easy grouping.
+runtime,1,5,Keep,Measure of interest. Provides objective values.
+genres,2,5,Keep,Attribute of interest. Provides subjective grouping.
+production_companies,1,4,Keep,Attribute of interest. Provides objective grouping.
+release_date,1,4,Remove,Attribute of interest. Provides objective grouping. Too fine a grain for my needs
+vote_count,1,3,Remove,Measure of interest. Provides objective values. Demographics unknown. Population size too varied.
+vote_average,3,3,Remove,Measure of interest. Provides subjective values. Demographics unknown. Population size too varied
+release_year,1,5,Keep,Attribute of interest. Transform to string. Provides objective grouping.
+budget_adj,2,3,Remove,Measure of interest. 
+revenue_adj,2,3,Remove,Measure of interest. Provides objective grouping.
